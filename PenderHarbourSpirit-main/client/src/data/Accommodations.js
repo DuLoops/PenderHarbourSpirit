@@ -1,0 +1,373 @@
+ const accommodations = [
+     {
+        id: 1,
+        title: "Backeddy Resort and Marina",
+        phoneNo: "(604) 883-2298",
+        summary: "The Backeddy Resort and Marina is a waterfront playground. Enjoy waterfront cabins, camping, a pub/restaurant, a marina, and more. Located in the village of Egmont on BC's Sunshine Coast.",
+        fullDescription: "With 600 feet of remote shoreline on the beautiful Sechelt Inlet, the Backeddy Resort and Marina is a waterfront playground. Enjoy waterfront cabins, camping, a pub/restaurant, a marina, and more. Located in the village of Egmont on BC's Sunshine Coast.",
+        type: "Resorts and Spas",
+        url: "http://www.backeddy.ca",
+        area: "Egmont",
+        address: "16660 Backeddy Road",
+        province: "BC",
+        postalCode: "V0N 1N0",
+        cardviewPicture: "https://backeddy.ca/wp-content/uploads/2020/08/backeddy-means-to-us.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_866,w_866,x_0,y_0/v1544732623/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/c5b5b42c1bae455fa184014468a9aa95/16998947-1254584021263757-3048541613411573342-n.png",
+        facebookURL: "https://www.facebook.com/BackeddyResort/",
+        instagramURL: "https://www.instagram.com/backeddyresort/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g499128-d273012-Reviews-Backeddy_Resort_Marina-Egmont_Sunshine_Coast_British_Columbia.html",
+        email: "info@backeddy.ca",
+        longitude: -123.94004507846515,
+        latitude: 49.75692770855153,
+     },
+     {
+        id: 2,
+        title: "Bathgate General Store, Resort & Marina",
+        phoneNo: "(604) 883-2222",
+        summary: "Located on the waterfront in Egmont, BC, Bathgate General Store, Resort and Marina is your gateway to the majestic beauty of Hotham Sound, Harmony Islands, Jervis and Sechelt Inlets, and the world-famous Princess Louisa Inlet",
+        fullDescription: "Located on the waterfront in the Sunshine Coast village of Egmont, British Columbia, Bathgate General Store, Resort and Marina is your gateway to the majestic beauty of British Columbia's Hotham Sound, Harmony Islands, Jervis and Sechelt Inlets and world famous Princess Louisa Inlet (Malibu rapids and Chatterbox Falls).",
+        type: "Resorts and Spas",
+        url: "https://bathgate.com/",
+        area: "Egmont",
+        address: "6781 Bathgate Rd",
+        province: "BC",
+        postalCode: "V0N 1N0",
+        cardviewPicture: "https://bathgate.com/home/wp-content/uploads/2016/07/bathgate-walkway.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_179,w_299,x_0,y_0/v1545074922/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/7bf34f541e9f4d788f52a4ed3f7dff13/5489911.jpg",
+        facebookURL: "https://www.facebook.com/Bathgate-General-Store-Motel-and-Marina-1867968396802931/",
+        instagramURL: "https://www.instagram.com/bathgate_general_store/",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g499128-d2626952-Reviews-Bathgate_General_Store_Resort_Marina-Egmont_Sunshine_Coast_British_Columbia.html",
+        email: "info@bathgate.com", 
+        longitude: -123.93005977452145,
+        latitude: 49.749461060374244,
+      },
+     {
+        id: 3,
+        title: "Freedom Lodge & Spa",
+        phoneNo: "(604) 883-0513",
+        summary: "Freedom Lodge is a modern 800 sf vacation rental suite situated on the first level of a 3-storey cedar chalet-style home. We are centrally located in Madeira Park, Pender Harbour BC, with views of the ocean, Garden Bay and Mount Daniel.",
+        fullDescription: "Freedom Lodge & Spa is a modern 800 sf vacation rental suite situated on the first level of a 3-storey cedar chalet-style home. We are centrally located in Madeira Park, Pender Harbour BC, with views of the ocean, Garden Bay and Mount Daniel. Features include a private deck with BBQ, hot tub, onsite spa services, fireplace, fully equipped kitchen & bath, WiFi, and located just minutes from the village, marinas and waterfront.",
+        type: "Resorts and Spas",
+        url: "http://www.penderlodge.jigsy.com",
+        area: "Madeira Park",
+        address: "5214 Wesjac Rd",
+        province: "BC",
+        postalCode: "V0N 2H1",
+        cardviewPicture: "http://penderlodge.jigsy.com/files/resized/111179/cropped/0;142;1632;573;1199;673;1db0d188d369fe885415dcd5243757a98ac3df67.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_349,w_1280,x_0,y_0/v1638906490/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/fa81342bc85e429383b2833f81ee4625/FreedomLodgeAndSpa.jpg",
+        facebookURL: "https://www.facebook.com/freedomspa/",
+        instagramURL: "",
+        tripadvisorURL: "https://www.tripadvisor.ca/VacationRentalReview-g775493-d6596898-Freedom_Lodge_Spa-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "freedomspa@me.com", 
+        longitude: -124.0144440165431,
+        latitude: 49.62307412089468,
+      },
+     {
+        id: 4,
+        title: "John Henry's Marina & Resort",
+        phoneNo: "(604) 883-2253",
+        summary: "John Henry's is a full service marina & resort and includes a unique country General Store (open 7 days a week year round), a liquor store, fresh produce & groceries, an ATM, propane, bait, ice, gifts and fishing & boating supplies.",
+        fullDescription: "John Henry's is a full service marina & resort and includes a unique country General Store (open 7 days a week year round), a liquor store, fresh produce & groceries, an ATM, propane, bait, ice, gifts and fishing & boating supplies. We also have comfortable oceanfront accommodations available year round, a marina for transient, seasonal and long-term moorage in a deep water, sheltered harbour, and a licensed, 40 seat oceanfront cafe with indoor & outdoor seating.",
+        type: "Resorts and Spas",
+        url: "http://www.johnhenrysresortmarina.com",
+        area: "Garden Bay",
+        address: "4907 Pool Rd.",
+        province: "BC",
+        postalCode: "V0N 1S0",
+        cardviewPicture: "https://staging.johnhenrysresortmarina.com/wp-content/uploads/2021/01/JH-House65-Prime.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1605400787/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/bb613d2c924d4f1fb53f2c636dfe3812/JH-Logo-Colour.jpg",
+        facebookURL: "",
+        instagramURL: "https://www.instagram.com/johnhenryspenderharbour/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g1821488-d2374941-Reviews-John_Henry_s_Marina_Resort-Garden_Bay_Sunshine_Coast_British_Columbia.html",
+        email: "info@johnhenrys.ca",
+        longitude: -124.03105947508628,
+        latitude: 49.63165897836838,
+     },
+     {
+        id: 5,
+        title: "Moon Dance Vacations",
+        phoneNo: "(604) 841-5805",
+        summary: "Luxury accommodations on British Columbia's beautiful Sunshine Coast! Moon Dance Perch and Moon Dance Cabin are secluded water view and waterfront retreats on the beautiful tidal basin of Oyster Bay, in Pender Harbour on the Sunshine Coast.",
+        fullDescription: "Moon Dance Perch and Moon Dance Cabin are secluded water view and waterfront retreats on the beautiful tidal basin of Oyster Bay, in Pender Harbour on the Sunshine Coast. The Perch is handicapped accessible. Four Seasons of Activities: kayak, canoe and snowshoe rentals, relaxing spas, artist studios, Madeira Park shopping, a range of hiking trails, golf, scuba diving, horseback riding, fishing and mountain biking.",
+        type: "B&B, Cottages, Cabins",
+        url: "http://www.moondance.travel/",
+        area: "Garden Bay",
+        address: "5761 Mt. Daniel View Road",
+        province: "BC",
+        postalCode: "V0N 2H1",
+        cardviewPicture: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/338145593.jpg?k=e85f136daa730f22e0f1134f1e7253ffb22c9532a51f8b27a673b3abe9031a2c&o=&hp=1",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1545766990/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/1397a2c32f3c4cdd993dbd0a4b88da9c/masterlogo.gif",
+        facebookURL: "",
+        instagramURL: "https://www.instagram.com/johnhenryspenderharbour/?hl=en",
+        tripadvisorURL: "",
+        email: "moondancevacation@gmail.com",
+        longitude: -123.98618731626959,
+        latitude: 49.63761893773682,
+     },
+     {
+        id: 6,
+        title: "Pender Harbour Resort & Marina",
+        phoneNo: "(604) 883-2424",
+        summary: "A 6-acre resort with 600' of oceanfront offering a large 4-bedroom chalet, 12 cottages, 2 yurts, 4 motel rooms and 18 full-hook-up RV sites.",
+        fullDescription: "A 6-acre resort with 600' of oceanfront offering a wide range of accommodation choices, including a large chalet with 4 bedrooms, 12 cottages with mixed styles and configurations, 2 yurts, 4 motel rooms and 18 fully serviced RV sites. A 2.5 acre marina with 100 slips accepts boats up to 50' in length, and a boat launch. Motel suites sit above a small convenience store, fishing tackle shop and laundry room. Motorboat rentals, kayak and SUP rentals, a heated swimming pool in summer months, campfire pit with seating, playing field and on-site hall with kitchen available for rent for special functions like weddings, family reunions, or group getaways.",
+        type: "Resorts and Spas",
+        url: "https://www.penderharbourresort.com/",
+        area: "Garden Bay",
+        address: "4686 Sinclair Bay Rd",
+        province: "BC",
+        postalCode: "V0N 1S1",
+        cardviewPicture: "https://www.penderharbourresort.com/assets/images/home/slides/hp-acc-chalet-001@2x.jpg?1630099169",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1640209010/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/920a01e53d2443508fe2d25491d29368/Pender-Harbour-logo-final-primary.jpg",
+        facebookURL: "https://www.facebook.com/PenderHarbourResort/",
+        instagramURL: "https://www.instagram.com/penderharbourresort/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g1821488-d2046249-Reviews-Pender_Harbour_Resort_Marina-Garden_Bay_Sunshine_Coast_British_Columbia.html",
+        email: "admin@penderharbourresort.com",
+        longitude: -124.04367615454541, 
+        latitude: 49.63445191078902, 
+      },
+     {
+        id: 7,
+        title: "Rockwater Secret Cove Resort",
+        phoneNo: "(604) 885-7038",
+        summary: "The Rockwater Secret Cove Resort is a romantic getaway with a variety of accomodations including deluxe Tenthouse Suites.",
+        fullDescription: "A romantic getaway, a seaside vacation with close friends or a retreat with your colleagues to energize and refocus. Find beauty and relaxation at Rockwater Secret Cove Resort... right here on British Columbia's beautiful Sunshine Coast. ",
+        type: "Resorts and Spas",
+        url: "http://www.rockwatersecretcoveresort.com/",
+        area: "Halfmoon Bay",
+        address: "5356 Oles Cove Road",
+        province: "BC",
+        postalCode: "V0N 1Y2",
+        cardviewPicture: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/175290262.jpg?k=385e2e41bb9689e1fcd01335c02230d4f2740b04b7d5e9d68262e2d5c6a68c6a&o=&hp=1",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1544735646/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/feddec6516bf472591185407d3af0fe8/417670-358769304162849-923914579-n.jpg",
+        facebookURL: "https://www.facebook.com/RockWaterResort/",
+        instagramURL: "https://www.instagram.com/rockwatersecretcoveresort/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g664811-d657299-Reviews-Rockwater_Secret_Cove_Resort-Halfmoon_Bay_Sunshine_Coast_British_Columbia.html",
+        email: "reservations@rockwatersecretcoveresort.com",
+        longitude: -123.97874819872865,
+        latitude: 49.5407640709963,
+      },
+     {
+        id: 8,
+        title: "Ruby Lake Resort",
+        phoneNo: "(604) 883-2269",
+        summary: "Welcome to Ruby Lake Resort on the Sunshine Coast of beautiful British Columbia! Nestled between the Caren Range Mountains and gorgeous Ruby Lake, we are situated in a natural paradise! Our 80+ acre nature-resort offers a variety of accommodations, including lagoon-side cottage duplexes, as well as both rustic glamping safari-style tents and tiny wood cabins.",
+        fullDescription: "Welcome to Ruby Lake Resort on the Sunshine Coast of beautiful British Columbia! Nestled between the Caren Range Mountains and gorgeous Ruby Lake, we are situated in a natural paradise! Our 80+ acre nature-resort offers a variety of accommodations, including lagoon-side cottage duplexes, as well as both rustic glamping safari-style tents and tiny wood cabins.",
+        type: "Resorts and Spas",
+        url: "https://www.rubylakeresort.com",
+        area: "Madeira Park",
+        address: "15426 Sunshine Coast Hwy",
+        province: "BC",
+        postalCode: "V0N 2H1",
+        cardviewPicture: "https://www.rubylakeresort.com/uploads/6/7/3/0/6730067/9972120_1_orig.jpg",
+        pictureURL: "https://www.rubylakeresort.com/uploads/6/7/3/0/6730067/1432503667.png",
+        facebookURL: "https://www.facebook.com/rubylakeresort/",
+        instagramURL: "https://www.instagram.com/rubylakeresort/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g775493-d568402-Reviews-Ruby_Lake_Resort-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "info@rubylakeresort.com",
+        longitude: -123.96763009517542, 
+        latitude: 49.71217016482804,
+     },
+     {
+        id: 9,
+        title: "Sunshine Coast Resort",
+        phoneNo: "(604) 883-9177",
+        summary: "Luxury accommodations on the Sunshine Coast with oceanview cottages, suites, and rooms, a full-service marina for boats up to 100', 30 amp power, water, wi-fi, hot showers, washrooms, and guest laundry, and more.",
+        fullDescription: "Luxury Accommodations on the BC Sunshine Coast. Enjoy our impressive line-up of oceanview cottages, suites, and rooms. Our full service marina offers moorage for boats up to 100' feet in length. 30 amp. power, water, hot showers, conveniently located washrooms and guest laundry are provided. The entire marina is now “wireless”, some slips have cable tv connections and the the outdoor hot tub is close by. Rent our selection of motorboats ranging in length from 12 to 17 feet with engines ranging from 20 horsepower to 75 horsepower. Choose from a variety of open aluminum boats or fiberglass runabouts.",
+        type: "Resorts and Spas",
+        url: "http://sunshinecoast-resort.com/",
+        area: "Madeira Park",
+        address: "12695 Sunshine Coast Hwy",
+        province: "BC",
+        postalCode: "V0N 2H0",
+        cardviewPicture: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/249332625.jpg?k=66ef628a102dbf9d06673d4223be8e365831699e70f37518b758a484659c838a&o=&hp=1",
+        pictureURL: "https://sunshinecoast-resort.com/wp-content/uploads/2015/05/logo-Sunshine-Coast-Resort-dark.png",
+        facebookURL: "https://www.facebook.com/SunshineCoastResort",
+        instagramURL: "",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g775493-d1151222-Reviews-Sunshine_Coast_Resort_Hotel_Marina-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "vacation@sunshinecoast-resort.com",
+        longitude: -124.01844228697094,
+        latitude: 49.623996414796736,
+     },
+     {
+        id: 10,
+        title: "West Coast Wilderness Lodge",
+        phoneNo: "(778) 280-8610",
+        summary: "West Coast Wilderness Lodge Resort offers guests unsurpassed scenery, exceptional adventure opportunities, fresh seasonal cuisine and a variety of accommodations to suit all tastes. Boat rentals, tours, restaurant, spa, and more. ",
+        fullDescription: "West Coast Wilderness Lodge Resort offers guests unsurpassed scenery, exceptional adventure opportunities, fresh seasonal cuisine and a variety of accommodations to suit all tastes. Enjoy the solitude at the edge of the wilderness following a scenic three hour drive or 45 minute float plane trip from downtown Vancouver.",
+        type: "B&B, Cottages, Cabins",
+        url: "http://wcwl.com/",
+        area: "Egmont",
+        address: "6649 Maple Rd",
+        province: "BC",
+        postalCode: "V0N 1N0",
+        cardviewPicture: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/8c/14/60/west-coast-wilderness.jpg?w=1200&h=-1&s=1",
+        pictureURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOae_7xFoNjL3aw3wwtuPLxPdzCPymUuBRPQ&usqp=CAU",
+        facebookURL: "https://www.facebook.com/WestCoastWildernessLodge/",
+        instagramURL: "https://instagram.com/wcwlodge",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g499128-d619473-Reviews-West_Coast_Wilderness_Lodge-Egmont_Sunshine_Coast_British_Columbia.html",
+        email: "lodge@wcwl.com",
+        longitude: -123.93762350536986, 
+        latitude: 49.755900265653906,
+      },
+     {
+        id: 11,
+        title: "Pender Harbour Hotel and Marina",
+        phoneNo: "604-883-9013",
+        summary: "The Pender Harbour Hotel's West Coast rooms are a welcome respite for travelers and a great home base for exploring the Sunshine Coast. Arriving by boat? Tie up at the Pender Harbour Hotel Marina. Visit the Grasshopper Pub for lunch or dinner.",
+        fullDescription: "The Pender Harbour Hotel's beautifully crafted West Coast rooms are a welcome respite for travelers, and a great home base for exploring the Sunshine Coast and Pender Harbour. Arriving on a boat? Tie up at the Pender Harbour Hotel Marina for as long as it takes to eat a meal or do a cold beer run. Take advantage of our short and long term moorage rates and stay for a while! Visit the Grasshopper Pub for lunch or dinner.",
+        type: "Hotels, Motels",
+        url: "https://www.penderharbourhotel.com/",
+        area: "Madeira Park",
+        address: "12671 Sunshine Coast Hwy",
+        province: "BC",
+        postalCode: "V0N 2H1",
+        cardviewPicture: "https://images.trvl-media.com/hotels/17000000/16760000/16753000/16752982/71592865.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1545073175/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/4fe6583ef3184ad5a2c94c11316c1341/13086786-1708265922747575-3842535117639765481-o.jpg",
+        facebookURL: "https://www.facebook.com/profile.php?id=100063466063240",
+        instagramURL: "https://www.instagram.com/grasshopper.pub/?hl=en",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g775493-d4507866-Reviews-Pender_Harbour_Hotel-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "",
+        longitude: -124.02070227170518,
+        latitude: 49.622979286921144,
+      },
+     {
+        id: 12,
+        title: "The Stonewater Motel",
+        phoneNo: "(604) 883-0046",
+        summary: "The Stonewater Motel offers fully-equipped kitchens, flatscreen TVs, patio decks with tables & chairs, queen-size beds w/ comfy duvets. Stay in our campground!",
+        fullDescription: "Join us for some quiet time in cozy and rustic surroundings, or to bring friends and family, fire up a complimentary barbecue and play horseshoes or bocci ball on the lawn. We supply everything you need to relax and feel at home away from home... fully-equipped kitchens, flatscreen TVs, patio decks with tables and chairs, queen-size beds with comfy duvets, and more. If you're traveling with your own accommodations, ask about our newly-opened campground.",
+        type: "Hotels, Motels",
+        url: "http://www.thestonewater.ca",
+        area: "Madeira Park",
+        address: "13483 Sunshine Coast Highway",
+        province: "BC",
+        postalCode: "V0N 2H1",
+        cardviewPicture: "https://www.thestonewater.ca/gallery/113.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_432,w_622,x_346,y_165/v1545769015/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/3a0b166bafb54288bb9c78ab87ed5f13/101.jpg",
+        facebookURL: "https://www.facebook.com/Stonewater-Motel-133602259991104/",
+        instagramURL: "",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g775493-d1535257-Reviews-The_Stonewater_Motel-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "reservations@thestonewater.ca",
+        longitude: -123.97276905686445,
+        latitude: 49.635557043868126,
+      },
+     {
+        id: 13,
+        title: "Painted Boat Resort",
+        phoneNo: "604-883-2456",
+        summary: "A five-acre resort on the Sunshine Coast of British Columbia features 31 spacious and contemporary, fully appointed waterfront villas. Enjoy an oceanside meal and spend some time pampering yourself at The Spa.",
+        fullDescription: "The Painted Boat is a five-acre resort on the Sunshine Coast of British Columbia features 31 spacious and contemporary, fully appointed waterfront villas. Enjoy an oceanside meal at the Lagoon restaurant, and spend some time pampering yourself at the Spa. Rent a kayak or paddleboard and explore the Pender Harbour area on the water.",
+        type: "Resorts and Spas",
+        url: "https://paintedboat.com/",
+        area: "Madeira Park",
+        address: "12849 Lagoon Road",
+        province: "BC",
+        postalCode: "V0N 2H0",
+        cardviewPicture: "https://images.trvl-media.com/hotels/3000000/2180000/2178200/2178115/w960h632x0y44-7328e1d3.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        pictureURL: "https://paintedboat.com/wp-content/uploads/2019/06/pg_logo-head.jpg",
+        facebookURL: "https://www.facebook.com/PaintedBoatResort",
+        instagramURL: "https://www.instagram.com/paintedboatresort/",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g775493-d1149395-Reviews-Painted_Boat_Resort_Spa_Marina-Madeira_Park_Sunshine_Coast_British_Columbia.html",
+        email: "reservations@paintedboat.com",
+        longitude: -124.02786254490745,
+        latitude: 49.618190468818476,
+      },
+     {
+        id: 14,
+        title: "Garden Bay RV Resort",
+        phoneNo: "604-393-3823",
+        summary: "The Garden Bay RV Resort is located in beautiful Pender Harbour and open all year around.",
+        fullDescription: "The Garden Bay RV Resort is a perfectly situated RV park located in one of BC's best climate zones. You'll love the warm, dry summers and short balmy winters. Our site and amenities are in sparkling, brand new condition as we've just recently opened at the end of 2020.",
+        type: "Camping, Hostels, RV",
+        url: "https://gardenbayresort.com/",
+        area: "Garden Bay",
+        address: "4460 Garden Bay Rd",
+        province: "BC",
+        postalCode: "V0N 1S0",
+        cardviewPicture: "https://gardenbayresort.com/images/pic-1-copy-2_1.jpg",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_limit,h_300,w_300/v1641239120/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/c3d55717ead74c30b00baf3d07dadd9e/GardenBay-Resort.png",
+        facebookURL: "https://www.facebook.com/gardenbayrvresort/",
+        instagramURL: "https://www.instagram.com/gardenbayrv/?hl=en",
+        tripadvisorURL: "",
+        email: "info@gardenbayresort.com",
+        longitude: -124.02413687883661,
+        latitude: 49.63477386260845,
+      },
+     {
+        id: 15,
+        title: "Timberline RV Park",
+        phoneNo: "604-393-3823",
+        summary: "Nestled in between big trees you will find this 7 acre hideaway with 10 serviced sites (water, sewer, 30 amp power, free wifi) in the Earls Cove/Egmont area. Pet friendly.",
+        fullDescription: "Nestled in between big trees you will find this 7 acre hideaway with 10 serviced sites (water, sewer, 30 amp power, free wifi) in the Earls Cove/Egmont area. Just a 40 minute ferry ride and a 75 minute drive and you will be surrounded by five lakes, the ocean, two fine dining restaurants, a pub, a general store, hiking and biking trails, with fishing, kayaking and canoe options. We are also pet friendly.",
+        type: "Camping, Hostels, RV",
+        url: "http://www.timberlinecamping.ca",
+        area: "Earls Cove",
+        address: "16451B Timberline Road",
+        province: "BC",
+        postalCode: "V0N 2H4",
+        cardviewPicture: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/0c/ca/21/timberline-rv-park.jpg?w=1600&h=-1&s=1",
+        pictureURL: "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_365,w_535,x_28,y_70/v1545074113/tenants/76b6a622-c4bd-4cfc-9508-2d7abd453917/8a1a1f265f7840c8b411c426165a4282/picnic.jpg",
+        facebookURL: "",
+        instagramURL: "",
+        tripadvisorURL: "https://www.tripadvisor.ca/Hotel_Review-g2578399-d8047829-Reviews-Timberline_RV_Park-Earls_Cove_Sunshine_Coast_British_Columbia.html",
+        email: "info@timberlinecamping.ca",
+        longitude: -124.01334431362417,
+        latitude: 49.74793387670525,
+      },
+ ];
+
+// Sort by Alphabetical Order
+export const titleSort = ( a, b ) => {
+    if (a.title.toLowerCase() < b.title.toLowerCase()){
+        return -1;
+    }
+    if (a.title.toLowerCase() > b.title.toLowerCase()) {
+        return 1;
+    }
+    return 0;
+}
+
+// Exportable Functions
+export const getAccomodationByName = (name) => {
+   //Avoid using for-each loop because it will cause a compiling error for using an abrupt "break statement"
+   //Using for-each loop without a break statement can impact performance.
+   //SOLUTION: Use a for-of loop instead...
+   for (const accommodation of accommodations) {
+      if(accommodation.title === name) {
+         return accommodation;
+      }
+   }
+}
+
+export const getAllAccomodations = () => {
+    accommodations.sort(titleSort);
+    return accommodations;
+}
+
+export const getAccomodationsByType = (type) => {
+    var queryResults = [];
+
+    accommodations.forEach(accommodation => {
+        if(accommodation.type === type) {
+            queryResults.push(accommodation);
+        }
+    });
+
+    queryResults.sort(titleSort);
+
+    return queryResults; //An array
+}
+
+export const getAccomodationsByArea = (area) => {
+    var queryResults = [];
+
+    accommodations.forEach(accommodation => {
+        if(accommodation.area === area) {
+            queryResults.push(accommodation);
+        }
+    });
+
+    queryResults.sort(titleSort);
+
+    return queryResults; //An array
+}

@@ -1,0 +1,21 @@
+NOTE: To fully use this component, you need to pass in the following props from parent as strings in this format
+        <banner 
+        img="img"                          (OPTIONAL) => Example Input: img="images/JohnHenry.jpeg"
+        :isMobileView="mobileView"          (REQUIRED)
+        rootDirectory="Travel Information"  (REQUIRED)
+        childDirectory="Accommodation"      (REQUIRED)
+        location="Camp Lake"                (OPTIONAL - This prop can be used for small captions)
+        area="Pender Harbour"               (OPTIONAL - This prop can be used for small captions)
+        description="Planning your next trip down to Pender Harbor? Find a relaxing place to stay today!"/> (OPTIONAL)
+
+NOTE 2: If img prop is not passed in, a random image will be displayed.
+
+NOTE 3: Img CANNOT be a URL link to an image, but has to be in the file system (local directory)
+
+    For all parent components, please set up isMobileView by defining the following in the script section of your component:
+            - Please see settingUpMobileView.png in "assets > images > settingUpMobileView.png" 
+
+NOTE 4: BannerURL.vue is designed specifically for using pictures from URL links (instead of within filesystem).
+
+NOTE 5: BannerArray.vue is designed specifically for loading an array of pictures from URL links.
+========================================== END OF NOTES =========================================
