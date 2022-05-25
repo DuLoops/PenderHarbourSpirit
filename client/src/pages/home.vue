@@ -1,7 +1,7 @@
 <template>
   <div id="main">
 
-  <div style="font-size:4em; font-weight: bold; text-align:center; margin-top:1em; margin-bottom:0.5em;">
+  <div style="font-size:1em; font-weight: bold; text-align:center; margin-top:1em; margin-bottom:0.5em;">
       <p>Experience the beauty of PenderHarbour & Egmont</p>
        </div>
 
